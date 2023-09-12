@@ -32,6 +32,7 @@ const Navbar = (props: Props) => {
             onClick={() => setSelected("dashboard")}
             style={{
               color: selected === "dashboard" ? "inherit" : palette.grey[700],
+              fontWeight: "600",
               textDecoration: "inherit",
             }}
           >
@@ -44,10 +45,11 @@ const Navbar = (props: Props) => {
             onClick={() => setSelected("predictions")}
             style={{
               color: selected === "predictions" ? "inherit" : palette.grey[700],
+              fontWeight: "600",
               textDecoration: "inherit",
             }}
           >
-            Smart Predictions
+            Revenue Predictions
           </Link>
         </Box>
       </FlexBetween>
