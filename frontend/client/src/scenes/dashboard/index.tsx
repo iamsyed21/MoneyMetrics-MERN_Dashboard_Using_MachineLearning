@@ -1,7 +1,8 @@
-import { Box, useMediaQuery } from "@mui/material";
+import { Box, CircularProgress, Typography, useMediaQuery } from "@mui/material";
 import Row1 from "./Row1";
 import Row2 from "./Row2";
 import Row3 from "./Row3";
+import { useGetKpisQuery } from "@/state/api";
 import Navbar from "../navbar";
 const gridTemplateLargeScreens = `
   "a b c"
@@ -50,6 +51,17 @@ const gridTemplateSmallScreens = `
 
 const Dashboard = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1200px)");
+  const { data, isLoading } = useGetKpisQuery();
+  if (isLoading) {
+    return (
+      <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center" height="50vh">
+        <CircularProgress />
+        <Typography variant="body1" marginTop="16px" color="white">
+          "This website is hosted on the render free instance type ❤️, so 'Time to First Byte' may take a moment. Your patience is appreciated."
+        </Typography>
+      </Box>
+    );
+  }
   return (
     <>
     <Box

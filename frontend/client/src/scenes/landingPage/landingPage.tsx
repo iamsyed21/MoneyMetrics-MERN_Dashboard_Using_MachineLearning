@@ -1,5 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from "react-router-dom";
 import logo from '../../assets/logo.png'
 import './index.css';
 
@@ -10,18 +11,39 @@ const LandingPage = () => {
     <div className='mainLandingContainer container'>
       <div className='row'>
         <div className="col-12 col-md-6 flexer">
-        Welcome to MoneyMetrics! 🎉 Just so you know, this is a portfolio project, not Wall Street. So relax, you're in for a fun, zero-cost tour of my finance nerdery.
-
-You know how people say, "numbers don't lie"? Well, they don't, but they can be shy! MoneyMetrics helps your business figures step into the spotlight, but in a humble, "I'm-here-to-help-you" kind of way.
-
-Ever heard of my Business Inventory Management app? Think of this as its nerdy cousin who loves finance and charts. Yep, MoneyMetrics is an analytical extension of that project.
-
-Data here comes from "example.com"—no funny business, just good ol' numbers. The dashboard offers a smorgasbord of charts; think of it as an all-you-can-analyze buffet. Feeling adventurous? Our prediction page uses linear regression to offer a little crystal ball action for next year's sales.
-
-So, loosen that tie, put on your “thinking cap," and let's give your numbers a fun spin. Welcome aboard! 😎
+          <h1>
+          Welcome to MoneyMetrics! 🎉 
+          </h1>
+        <div className='notebox'>
+         <b>Note: </b> This is a portfolio Project, not a commercial venture.
         </div>
-        <div className="col-12 col-md-6 flexer">
-          <img alt='website logo' src={logo}/>
+        <div className='startAligner'>
+        <b>Key points</b>
+        </div>
+        
+        <ul>
+          <li>
+          All data is sourced responsibly from <a href='https://github.com/iamsyed21/MoneyMetrics-MERN_Dashboard_Using_MachineLearning/blob/main/data/data.js' target='_blank' rel="noreferrer"> Here</a>. so you can see what is being analyzed. 
+          </li>
+          <li>
+          The dashboard provides a comprehensive range of charts, functioning as an extensive analytical resource. 
+          </li>
+          <li>
+          For forward-looking insights, the prediction page in website employs an linear regression model to forecast next year's sales. This is done by manual calculation and not by using any Library.
+          </li>
+        </ul>
+        </div>
+        <div className="col-12 col-md-6 rigthside">
+          <img alt='website logo' className='pictureLogo' src={logo}/>
+         
+            <button className='gotodashboardButton'>
+            <Link
+            to="/dashboard">
+            Go To DashBoard🚀
+            </Link>
+          </button>
+          
+        
         </div>
 
         
@@ -35,13 +57,10 @@ So, loosen that tie, put on your “thinking cap," and let's give your numbers a
             👨‍💻 Developed using the M.E.R.N satck by me, Syed Moin Ahmed.
             </li>
             <li>
-            🎥 Explore more of my projects or get in touch through my portfolio: <a target='_blank' rel="noreferrer" href='https://syedmoinahmed.dev/'>Here</a>. Have questions or just want to chat about your favorite movies? Feel free to reach out – I'm all ears (not literally)!
+            🎥 Explore more of my projects or get in touch through my portfolio: <a target='_blank' rel="noreferrer" href='https://syedmoinahmed.dev/'>Here</a>. Have questions or just want to chat about AI? Feel free to reach out – I'm all ears (not literally)!
             </li>
             <li>
-            📝 The source code for this entire project is available at Repository : <a target='_blank' rel="noreferrer" href='https://github.com/iamsyed21/Netflix-Clone-Frontend'>Frontend</a> | <a target='_blank' rel="noreferrer" href='https://github.com/iamsyed21/Netflix-Clone-Backend'>Backend</a> 
-            </li>
-            <li>
-            🎛️ All the content of this website is uploaded, managed and track from the <b>Notflix Management Portal with analytics</b>: <a target='_blank' rel="noreferrer" href='https://FlexiDashPortal.syedmoinahmed.dev' >Here</a> | Source code: <a target='_blank' rel="noreferrer" href='https://github.com/iamsyed21/FlexiDash-VersatileAdminDashboard'>Here</a> 
+            📝 The source code for this entire project is available at Repository : <a target='_blank' rel="noreferrer" href='https://github.com/iamsyed21/MoneyMetrics-MERN_Dashboard_Using_MachineLearning'>Here</a>
             </li>
           </ul>
 
