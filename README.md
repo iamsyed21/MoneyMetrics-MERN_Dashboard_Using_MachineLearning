@@ -2,7 +2,7 @@
 
 **MoneyMetrics** is a sophisticated finance dashboard application developed using the MERN stack, featuring predictive analytics with regression models. This application excels in providing real-time financial data visualization through advanced charting, aiding users in insightful analysis and decision-making. Its custom regression algorithms for revenue forecasting set it apart, emphasizing user-centric financial management without relying on external ML libraries.
 
-[Application URL](#) <!-- Replace '#' with the actual URL -->
+[Application URL](https://moneymetrics.syedmoinahmed.dev/) <!-- Replace '#' with the actual URL -->
 
 <p align="center">
   <img src="/ss1.png" alt="Do-It Interface" />
